@@ -8,6 +8,7 @@ def main():
     # set up the Streamlit app
     st.write("Name: Joemart Gridson T. Turaray")
     st.write("Section: CPE32S4")
+    st.write("Instructor: Dr. Jonathan Taylar")
     st.title("Class Weather ( Sunrise/Cloudy)")
     st.write("This app classifies whether an uploaded image contains a Sunrise or Cloudy images using a pre-trained convolutional neural network model.")
    
