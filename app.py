@@ -6,10 +6,10 @@ import cv2
 
 def main():
     # set up the Streamlit app
-    st.write("Name: Dhan Arthur Garingan")
-    st.write("Section: CPE32S6")
-    st.title("Electric Car and bus Classifier")
-    st.write("This app classifies whether an uploaded image contains a Electric Car or Electric Bus using a pre-trained convolutional neural network model.")
+    st.write("Name: Joemart Gridson T. Turaray")
+    st.write("Section: CPE32S4")
+    st.title("Class Weather ( Sunrise/Cloudy)")
+    st.write("This app classifies whether an uploaded image contains a Sunrise or Cloudy images using a pre-trained convolutional neural network model.")
    
     @st.cache_resource
     def load_model():
@@ -26,10 +26,10 @@ def main():
         return prediction
 
     model = load_model()
-    class_names = ["Electric Car", "Electric Bus"]
+    class_names = ["CLOUDY", "SUNRISE"]
     
 
-    file = st.file_uploader("Choose a Electric Car or Electric Bus picture from your computer", type=["jpg", "png", "jpeg"])
+    file = st.file_uploader("Choose a Cloudy or Sunrise picture from your computer", type=["jpg", "png", "jpeg"])
 
     if file is None:
         st.text("Please upload an image file")
